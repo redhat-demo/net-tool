@@ -7,8 +7,7 @@ LABEL io.k8s.display-name="Network Tools" \
 # building on a RHEL node with valid subscriptions
 RUN dnf install --nodocs -y \
    iproute procps-ng bind-utils iputils \
-   net-tools traceroute \
-   mtr iperf3 tcpdump \
+   net-tools \
    lksctp-tools \
    less tree jq  && \
    dnf clean all && \
