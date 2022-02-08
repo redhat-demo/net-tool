@@ -9,7 +9,7 @@ RUN dnf install --nodocs -y \
    iproute procps-ng bind-utils iputils \
    net-tools \
    lksctp-tools \
-   less tree jq  && \
+   less jq  && \
    dnf clean all && \
    rm -rf /var/cache/dnf
 
